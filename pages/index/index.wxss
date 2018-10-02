@@ -1,0 +1,67 @@
+page{
+  padding: 20rpx;
+  box-sizing: border-box;
+}
+.header{
+  border: 1px solid #ccc;
+  border-radius: 10rpx;
+  display: flex;
+  height: 80rpx;
+  align-items: center;
+  padding: 0 20rpx;
+  box-shadow: 0 0 10rpx #ccc;
+}
+.header image{
+  width: 40rpx;
+  height: 40rpx;
+}
+.header input{
+  font-size: 28rpx;
+  margin-left: 10rpx;
+}
+
+.list{
+  margin-top: 20rpx;
+  border: 1px solid #ccc;
+  border-bottom: none;
+}
+.list .item{
+  border-bottom: 1px solid #ccc;
+  height: 80rpx;
+  display: flex;
+  align-items: center;
+  padding: 0 20rpx;
+}
+.list .item text{
+  flex: 1;
+  font-size: 28rpx;
+  margin-left: 10rpx
+}
+.list .item text.completed{
+  color: #999;
+  text-decoration: line-through;
+}
+
+.footer{
+  margin-top: 30rpx;
+  font-size: 28rpx;
+  color: #999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40rpx;
+}
+
+.tips{
+  color: #999;
+  text-align: center;
+}
+
+.tips .title{
+  font-size: 60rpx;
+  margin-top: 60rpx;
+}
+.tips .content{
+  font-size: 32rpx;
+  margin-top: 30rpx;
+}

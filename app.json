@@ -1,0 +1,30 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#00B25C",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "Location",
+    "backgroundColor": "#fff",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "list": [
+      {
+      "pagePath": "pages/index/index",
+      "text": "任务",
+      "iconPath": "/assets/todos.png",
+      "selectedIconPath": "/assets/todos-active.png"
+    },
+      {
+      "pagePath": "pages/logs/logs",
+      "text": "定位",
+      "iconPath": "/assets/safari.png",
+      "selectedIconPath": "/assets/safari-actived.png"
+    }
+    ]
+  }
+}

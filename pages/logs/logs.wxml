@@ -1,0 +1,7 @@
+<!--绑定点击事件-->
+<button>您所在的坐标</button>
+<!--地图容器-->
+<!-- <map id="myMap"
+   style="width:100%;height:500px;"
+  scale='16'>
+</map> -->

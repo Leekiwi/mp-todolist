@@ -1,0 +1,29 @@
+<!-- 头部 -->
+<view class='header'>
+  <image src='/assets/plus.png'></image>
+  <input bindinput='getName' bindconfirm='add' value='{{name}}' placeholder='请输入待办的任务...'></input>
+
+</view>
+
+<block wx:if="{{list.length>0}}">
+<!-- 列表 -->
+<view class='list'>
+  <view class='item' wx:for="{{list}}" wx:key="id">
+    <icon bindtap='change' data-id='{{item.id}}' type="{{item.completed?'success':'circle' }}" size='18'></icon>
+    <text class="{{item.completed?'completed':''}}">{{item.name}}</text>
+    <icon type='clear' bind:tap='del' data-id='{{item.id}}' size='18'></icon>
+  </view>
+</view>
+<!-- 底部 -->
+  <view class='footer'>
+  <text bindtap='toggleAll'>选择所有任务</text>
+  <text>{{leftCount}}项任务</text>
+  <text wx:if='{{list.length-leftCount>0}}' bindtap='clearCom'>确认完成</text>
+</view>
+</block>
+<block wx:else>
+  <view class='tips'>
+    <view class='title'>高效时间管理 !</view>
+    <view class='content'>记录一天行程安排</view>
+  </view>
+</block>
